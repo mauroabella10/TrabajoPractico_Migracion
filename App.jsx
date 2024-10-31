@@ -1,11 +1,11 @@
-import '../public/CSS/index.css';
-import Header from '../src/components/layout/Header';
-import Footer from '../src/components/layout/Footer';
-import Slider from './components/Slider';
-import History from './components/History';
-import slider1 from '../public/img/Slider1.svg';
-import slider2 from '../public/img/Slider2.svg';
-import slider3 from '../public/img/Slider3.svg';
+import './index.css';
+import Header from './src/components/layout/Header';
+import Footer from './src/components/layout/Footer';
+import Slider from './src/components/Slider';
+import History from './src/components/History';
+import slider1 from './public/img/Slider1.svg';
+import slider2 from './public/img/Slider2.svg';
+import slider3 from './public/img/Slider3.svg';
 
 function App() {
 

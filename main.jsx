@@ -1,11 +1,11 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import App from '../src/App.jsx'
-import Error from './components/layout/Error.jsx';
+import App from './App.jsx'
+import Error from './src/components/layout/Error.jsx';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Cards from './Cards.jsx';
-import Galeria from './Galeria.jsx';
-import Contacto from './Contacto.jsx';
+import Cards from './src/Cards.jsx';
+import Galeria from './src/Galeria.jsx';
+import Contacto from './src/Contacto.jsx';
 
 const routes = createBrowserRouter([
   {
