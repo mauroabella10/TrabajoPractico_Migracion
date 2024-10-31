@@ -2,6 +2,7 @@
   "name": "trabajopractico",
   "private": true,
   "version": "0.0.0",
+  "homepage": "http//:mauroabella10.github.io/TrabajoPractico_Migracion",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -10,6 +11,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "gh-pages": "^6.2.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.27.0"
