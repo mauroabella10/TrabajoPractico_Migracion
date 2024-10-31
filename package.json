@@ -2,9 +2,11 @@
   "name": "trabajopractico",
   "private": true,
   "version": "0.0.0",
-  "homepage": "http//:mauroabella10.github.io/TrabajoPractico_Migracion",
+  "homepage": "https//:mauroabella10.github.io/TrabajoPractico_Migracion",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
