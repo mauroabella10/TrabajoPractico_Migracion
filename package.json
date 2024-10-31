@@ -2,7 +2,7 @@
   "name": "trabajopractico",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https//:mauroabella10.github.io/TrabajoPractico_Migracion",
+  "homepage": "https://migraciones.tp/",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
