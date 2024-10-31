@@ -1,0 +1,392 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-image: url(/IMG/Fondo.jpg);
+}
+
+.header{
+    background-color: #333;
+    width: 100vw;
+    height: 90px;
+}
+
+.logo{
+    height: 70px;
+    border-radius: 50%;
+    padding: 12px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 90px;
+
+}
+
+.navbar{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar-item{
+    margin: 0 20px;
+}
+
+.navbar-item a{
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.navbar-item a:after{
+    content: "";
+    position: absolute;
+    background-color: brown;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+    transition: all .4s;
+}
+
+.navbar-item a:hover:after{
+    width: 100%;
+}
+
+
+.nav-toggle{
+     color: #fff;
+     font-size: 30px;
+     background: none;
+     border: none;
+     padding: 0 10px;
+     display: none;
+     cursor: pointer;
+}
+
+
+/* Fin Header */
+
+
+/* Inicio Contact */
+
+.main-container{
+    display: flex;
+    flex-wrap: wrap;
+    height: 611px;
+    max-width: 1280px;
+    margin: 25px auto;
+    background-color: #ffffff;
+    border-radius: 60px;
+}
+
+.info-container{
+    width: 25vw;
+    margin: 30px auto;
+    min-width: 540px;
+    padding: 30px;
+
+}
+
+.form-container{
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin: 40px auto;
+    padding-right: 30px;
+}
+
+.info-container h1{
+    font-size: 55px;
+    margin-bottom: 30px;
+}
+
+.info-container p{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.info-container span{
+    color: pink;
+}
+
+.form-container input, button, textarea{
+    padding: 14px;
+    margin: 14px;
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #3e3e3e;
+    color: #3e3e3e;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-container textarea{
+    resize: none;
+}
+
+.form-container button{
+    background-color: #3e3e3e;
+    color: #ffffff;
+}
+
+.form-container button:hover{
+    opacity: 0.7;
+}
+
+/* Fin Contact */
+
+
+
+
+
+/* Inicio Footer */
+
+.footer{
+    width: 100%;
+    background-color: #333;
+    bottom: 10px;
+}
+
+.footer-container{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+    padding: 25px 0px;
+
+}
+
+.box{
+    text-align: center;
+}
+
+.box2{
+    min-width: 320px;
+}
+
+.box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+.box p{
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.box a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    line-height: 36px;
+    margin-right: 10px;
+    background-color: #3e3e3e;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 22px;
+}
+
+.box a:hover{
+    opacity: .7;
+}
+
+.footer-copy{
+    background-color: #3e3e3e;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.footer-copy p{
+    font-size: 12px;
+}
+
+
+/* Fin Footer */
+
+/* Inicio Querys */
+
+@media (max-width: 900px) {
+
+  
+
+    .main-container{
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        width: 95%;
+        margin: 25px auto;
+        background-color: #ffffff;
+        border-radius: 60px;
+    }
+    
+    .info-container{
+        width: 100%;
+        padding: 30px;
+        
+    }
+    
+    .form-container{
+        min-width: 400px;
+        display: flex;
+        flex-direction: column;
+        margin: 40px auto;
+        padding-right: 30px;
+    }
+    
+    .info-container h1{
+        font-size: 55px;
+        margin-bottom: 30px;
+    }
+    
+    .info-container p{
+        font-size: 20px;
+        margin-bottom: 0px;
+        width: 80%
+    }
+    
+    .info-container span{
+        color: pink;
+    }
+    
+    .form-container input, button, textarea{
+        padding: 14px;
+        margin: 14px;
+        background: none;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #3e3e3e;
+        color: #3e3e3e;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .form-container textarea{
+        resize: none;
+    }
+    
+    .form-container button{
+        background-color: #3e3e3e;
+        color: #ffffff;
+    }
+    
+    .form-container button:hover{
+        opacity: 0.7;
+    }
+
+    .footer{
+        position: relative;
+        width: 100%;
+        background-color: #333;
+        bottom: 0;
+    }
+
+    .footer-container{
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+        padding: 45px 0px;
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header{
+        height: 70px;
+    }
+
+    .nav{
+        height: 74px;
+        position: fixed;
+         top: 0;
+        z-index: 100;
+        background-color: #333;
+        width: 100%;
+    }
+    
+    .logo{
+        height: 84px;
+        padding: 14px;
+    }
+    
+    .navbar{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        background-color: #333;
+        left: 100%;
+        top: 70px;
+        width: 100%;
+        height: calc(100% - 70px);
+        overflow-y: auto;
+        transition: all .4s;
+        z-index: 100;
+    }
+
+    .navbar-item{
+        margin: 20px;
+    }
+
+    .nav-toggle{
+        padding: 0 30px;
+        display: block;
+   }
+
+   .navbar_visible{
+    left: 0;
+   }
+
+   .nav-toggle:focus:not(:focus-visible){
+    outline: none;
+   }
+
+   .info h2{
+    font-size: 40px;
+    margin: 8px 0;
+    padding: 3px;
+   }
+
+   .info p{
+    font-size: 20px;
+   }
+
+}
+
+/* Fin Querys */
