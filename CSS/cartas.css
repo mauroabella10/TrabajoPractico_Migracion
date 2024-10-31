@@ -1,0 +1,466 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.header{
+    background-color: #333;
+    width: 100vw;
+    height: 90px;
+}
+
+.logo{
+    height: 70px;
+    border-radius: 50%;
+    padding: 12px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 90px;
+
+}
+
+.navbar{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar-item{
+    margin: 0 20px;
+}
+
+.navbar-item a{
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.navbar-item a:after{
+    content: "";
+    position: absolute;
+    background-color: brown;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+    transition: all .4s;
+}
+
+.navbar-item a:hover:after{
+    width: 100%;
+}
+
+
+.nav-toggle{
+     color: #fff;
+     font-size: 30px;
+     background: none;
+     border: none;
+     padding: 0 10px;
+     display: none;
+     cursor: pointer;
+}
+
+
+/* Fin Header */
+
+
+/* Inicio Cards */
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 30px;
+    font-family: sans-serif;
+}
+
+.card{
+    width: 100%;
+    max-width: 300px;
+    margin: 10px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0,  0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0,  0.4);
+    transform: translateY(-3%);
+}
+
+.card img{
+    width: 100%;
+    height: 210px;
+}
+
+.card .contenido{
+    padding: 15px;
+    text-align: center;
+}
+
+.card .contenido h3{
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 25px;
+    color: brown;
+}
+
+.card .contenido p{
+    line-height: 1.5;
+    font-size: 15px;
+    margin: 10px;
+}
+
+.card .contenido a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    color: brown;
+    border: 1px solid brown;
+    border-radius: 10px;
+    transition: all 400ms ease;
+}
+
+.card .contenido a:hover{
+    background: brown;
+    color: #fff;
+}
+
+@media (max-width: 1250px) {
+    .container{
+        max-width: 900px;
+    }
+}
+
+@media (max-width: 750px) {
+    .container{
+        flex-direction: column;
+    }
+}
+
+/* Fin Cards */
+
+/* Inicio new Cards */
+
+.new-cards-content{
+        width: 100%;
+        max-width: 1200px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: auto;
+        padding: 30px;
+        font-family: sans-serif;
+}
+
+.new-cards-container{
+    width: 100%;
+    height: auto;
+    background-color: brown;
+}
+
+.new-cards-container h2 {
+    margin: 30px;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+}
+
+.new-cards-container hr{
+    width: 80%;
+    margin: auto;
+}
+
+.card-form-container{
+    background-image: url(../IMG/Fondo.jpg);
+    min-width: 450px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.card-form-container h3{
+    padding: 20px;
+    font-size: 32px;
+    text-align: center;
+}
+
+.card-form{
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h3{
+    font-size: 20px;
+}
+
+.card-form label{
+    font-size: 20px;
+    padding-top: 15px;
+    font-weight: bold;
+}
+
+.input-cards{
+    padding: 10px;
+    border-radius: 30px;
+    min-width: 300px;
+    margin: 10px auto;
+}
+
+.inputs-color{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    padding-bottom: 30px;
+    align-items: center;
+}
+
+.card-form button{
+    padding: 10px;
+    min-width: 300px;
+    margin: auto;
+    border-radius: 30px;
+}
+
+.input-cards:valid{
+    border-color: green;
+}
+
+.input-cards:invalid{
+    border-color: red;
+}
+
+/* Fin new Cards */
+
+/* Inicio Footer */
+
+.footer{
+    width: 100%;
+    background-color: #333;
+}
+
+.footer-container{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+    padding: 25px 0px;
+
+}
+
+.box{
+    text-align: center;
+}
+
+.box2{
+    min-width: 320px;
+}
+
+.box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 25px;
+    letter-spacing: 1px;
+}
+
+.box p{
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.box a{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    line-height: 36px;
+    margin-right: 10px;
+    background-color: #3e3e3e;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 22px;
+}
+
+.box a:hover{
+    opacity: .7;
+}
+
+.footer-copy{
+    background-color: #3e3e3e;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.footer-copy p{
+    font-size: 12px;
+}
+
+
+/* Fin Footer */
+
+/* Inicio Querys */
+
+@media (max-width: 900px) {
+    .footer-container{
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 30px;
+        padding: 45px 0px;
+        width: 100%;
+    }
+
+    .card-form-container{
+        background-color: #fff;
+        width: 90%;
+    }
+    
+    .card-form-container h3{
+        padding: 0px;
+        font-size: 32px;
+        text-align: center;
+    }
+    
+    .card-form{
+        display: flex;
+        flex-direction: column;
+        margin: 0px auto;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    h3{
+        font-size: 10px;
+    }
+    
+    .card-form label{
+        font-size: 20px;
+        padding-top: 15px;
+        font-weight: bold;
+    }
+    
+    .input-cards{
+        padding: 10px;
+        border-radius: 30px;
+        min-width: 300px;
+        margin: 10px auto;
+    }
+    
+    .inputs-color{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        padding-bottom: 30px;
+        align-items: center;
+    }
+    
+    .card-form button{
+        padding: 10px;
+        min-width: 300px;
+        margin: auto;
+        border-radius: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header{
+        height: 70px;
+    }
+
+    .nav{
+        height: 74px;
+        position: fixed;
+         top: 0;
+        z-index: 100;
+        background-color: #333;
+        width: 100%;
+    }
+    
+    .logo{
+        height: 84px;
+        padding: 14px;
+    }
+    
+    .navbar{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        background-color: #333;
+        left: 100%;
+        top: 70px;
+        width: 100%;
+        height: calc(100% - 70px);
+        overflow-y: auto;
+        transition: all .4s;
+        z-index: 100;
+    }
+
+    .navbar-item{
+        margin: 20px;
+    }
+
+    .nav-toggle{
+        padding: 0 30px;
+        display: block;
+   }
+
+   .navbar_visible{
+    left: 0;
+   }
+
+   .nav-toggle:focus:not(:focus-visible){
+    outline: none;
+   }
+
+}
+
+/* Fin Querys */
