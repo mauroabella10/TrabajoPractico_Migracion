@@ -12,9 +12,9 @@ import medialunas from '../public/img/medialuna.png';
 function Galeria() {
 
   const navLinks = [
-    { name: 'Cards', url: '#' },
-    { name: 'Galery', url: '#' },
-    { name: 'Contact', url: '#' }
+    { name: 'Cards', url: '/Cards' },
+    { name: 'Galery', url: '/Galery' },
+    { name: 'Contact', url: '/Contact' }
   ];
 
   const navImgs = [
@@ -35,7 +35,7 @@ function Galeria() {
 
   return (
     <>
-      <Header brandUrl='#' navLinks={navLinks}/>
+      <Header brandUrl='/' navLinks={navLinks}/>
       <Galery navImgs={navImgs} />
       <Footer navIcons={navIcons} />
     </>

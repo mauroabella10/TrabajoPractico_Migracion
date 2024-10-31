@@ -6,9 +6,9 @@ import Contact from './components/Contact';
 function Contacto() {
 
   const navLinks = [
-    { name: 'Cards', url: '#' },
-    { name: 'Galery', url: '#' },
-    { name: 'Contact', url: '#' }
+    { name: 'Cards', url: '/Cards' },
+    { name: 'Galery', url: '/Galery' },
+    { name: 'Contact', url: '/Contact' }
   ];
 
   const navIcons = [
@@ -20,7 +20,7 @@ function Contacto() {
 
   return (
     <>
-      <Header brandUrl='#' navLinks={navLinks}/>
+      <Header brandUrl='/' navLinks={navLinks}/>
       <Contact />
       <Footer navIcons={navIcons} />
     </>

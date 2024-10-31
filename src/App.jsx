@@ -1,6 +1,6 @@
 import '../public/CSS/index.css';
-import Header from './components/layout/Header';
-import Footer from './components/layout/Footer';
+import Header from '../src/components/layout/Header';
+import Footer from '../src/components/layout/Footer';
 import Slider from './components/Slider';
 import History from './components/History';
 import slider1 from '../public/img/Slider1.svg';
