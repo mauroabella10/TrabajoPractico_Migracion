@@ -5,6 +5,8 @@ function Contact ({
     text1 = 'Si pasaste por algunos de nuestros locales y probastes nuestros productos o confiaste en nosotros para organizar tu fiesta y queres compartir tu opinión, no dudes escribirnos a info@bakery.com.ar. Tu opinión nos interesa y nos ayuda a mejorar día a día.',
     text2 = 'Si queres formar parte de nuestro equipo de trabajo, envíanos tu curriculum a info@bakery.com.ar',
     btnTitle = 'ENVIAR',
+    btnTitle2 = 'RESET',
+
 }) {
     return (
     <main className="main-container">
@@ -18,7 +20,10 @@ function Contact ({
             <input type="email" placeholder="Email" />
             <input type= "tel" placeholder="Telefono" />
             <textarea placeholder="Dejanos un mensaje..." rows="6"></textarea>
-            <button>{btnTitle}</button>
+            <div  className='form-buttons'>
+                <button type='submit'>{btnTitle}</button>
+                <button type='reset'>{btnTitle2}</button>
+            </div>
         </form>
     </main>
     )

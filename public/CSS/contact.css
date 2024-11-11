@@ -8,7 +8,7 @@
 body{
     display: flex;
     flex-direction: column;
-    background-image: url(/IMG/Fondo.jpg);
+    background-image: url(../img/Fondo.jpg);
 }
 
 .header{
@@ -87,7 +87,7 @@ body{
 .main-container{
     display: flex;
     flex-wrap: wrap;
-    height: 611px;
+    height: 600px;
     max-width: 1280px;
     margin: 25px auto;
     background-color: #ffffff;
@@ -116,7 +116,7 @@ body{
 }
 
 .info-container p{
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 20px;
 }
 
@@ -149,11 +149,58 @@ body{
     opacity: 0.7;
 }
 
+.form-buttons{
+    text-align: center;
+}
+
+.form-buttons button{
+    width: 40%;
+}
+
 /* Fin Contact */
 
 
+/* Inicio Login */
 
+.formLayout{
+    width: 50%;
+    margin: 123px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid red;
+    border-radius: 30px;
+    background-color: #fff;
 
+}
+
+.formLayout label{
+    color: #333;
+ text-align: left;
+    font-size: 20px;
+    width: 20%;
+}
+
+.formLayout input, select{
+    padding: 7px;
+    width: 40%;
+}
+
+.formTitle{
+    color: #3e3e3e;
+}
+
+.formLayout-container{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+}
+
+/* Fin Login */
 
 /* Inicio Footer */
 
@@ -251,15 +298,17 @@ body{
         display: flex;
         flex-wrap: wrap;
         height: auto;
-        width: 95%;
+        width: 100%;
         margin: 25px auto;
         background-color: #ffffff;
         border-radius: 60px;
     }
     
     .info-container{
-        width: 100%;
-        padding: 30px;
+        width:100%;
+        padding: 0px;
+        text-align: center;
+        margin: auto;
         
     }
     
@@ -278,8 +327,8 @@ body{
     
     .info-container p{
         font-size: 20px;
-        margin-bottom: 0px;
-        width: 80%
+        text-align: center;
+        width: 100vh;
     }
     
     .info-container span{

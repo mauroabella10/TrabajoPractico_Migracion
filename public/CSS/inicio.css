@@ -17,6 +17,10 @@ body{
     height: 90px;
 }
 
+.navbar-item .btn{
+    cursor: pointer;
+}
+
 .logo{
     height: 70px;
     border-radius: 50%;
@@ -50,6 +54,7 @@ body{
     color: #fff;
     letter-spacing: 1px;
     position: relative;
+    cursor: pointer;
 }
 
 .navbar-item a:after{
